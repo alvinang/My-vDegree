@@ -1,17 +1,15 @@
-<h2>Sign in</h2>
+<div class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="feature-title text-center">
+          <h2 style="margin-bottom:40px;">Welcome back!</h2>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+          <%= render 'devise/shared/login_form' %>
+          <%= render "devise/shared/links" %>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<%= form_for(resource, :as => resource_name, html: {class: 'form-horizontal'}, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+  <div class="form-group">
+    <%= f.label :email, class: 'col-sm-2 col-sm-offset-2 control-label' %>
+    <div class="col-sm-4">
+      <%= f.email_field :email, class: 'form-control', :autofocus => true %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, class: 'col-sm-2 col-sm-offset-2 control-label' %>
+    <div class="col-sm-4">
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-4">
+      <% if devise_mapping.rememberable? %>
+        <div class="checkbox text-left"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-4 text-left">
+      <%= f.submit "Sign Up", class: 'btn btn-primary btn-lg col-sm-4 btn-block' %>
+    </div>
+  </div>
+<% end %>

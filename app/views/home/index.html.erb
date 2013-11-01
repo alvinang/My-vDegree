@@ -1,4 +1,26 @@
 <div class="top">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="logo">
+            <h1><a href="/">My vDegree</a></h1>
+          </div>
+        </div>
+        <div class="navigation pull-right">
+          <%= link_to 'Home', root_path %>
+          <%= link_to 'About' %>
+          <% if user_signed_in? %>
+            <%= link_to 'Edit profile', edit_user_registration_path %>
+            <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to 'Sign up', new_user_registration_path %>
+            <%= link_to 'Login', new_user_session_path %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </header>
   <%= render 'home/top' %>
 </div>
 
