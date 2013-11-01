@@ -17,13 +17,18 @@ into real life projects is crucial.
 
 #### To do
 
-* Setup devise
+* Setup controller to render dashboard after login
+* Add password confirmation for signup
 * Setup facebook authentication with omniauth
 * create dashboard with backbone.js
 * create home page UI & dashboard
 * create display page for user's virtual education
+* setup devise mailer with Mandrill
+* add beta to logo
 
 ##### Future
 
 * Display projects
 * API or use mechanize to validate courses taken
+
+#### Resources
