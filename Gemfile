@@ -14,6 +14,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 gem 'font-awesome-rails', "~> 4.0.1.0"
 gem 'devise'
 gem 'protected_attributes'
+gem 'backbone-on-rails'
 
 group :doc do
   gem 'sdoc', require: false

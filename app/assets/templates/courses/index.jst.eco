@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="feature-title text-center">
+      <h3>Welcome <%= @user %></h3>
+      <p>
+        <!--place form  -->
+      </p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <!-- please display table -->
+</div>

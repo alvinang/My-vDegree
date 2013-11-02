@@ -1,8 +1,8 @@
 Myvdegree::Application.routes.draw do
-  devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
+  devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout'}
 
   authenticated do
-    root to: 'dashboard#index', as: :authenticated_root
+    root to: 'dashboard#index', as: :authenticated_root, via: [:get, :post]
   end
 
   root to: "home#index"
