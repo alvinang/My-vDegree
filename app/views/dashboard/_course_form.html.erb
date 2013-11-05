@@ -1,0 +1,19 @@
+<%= form_for @dashboard, url: {action: 'create'}, html: {class: 'form-inline', role: 'form'} do |f| %>
+  <div class="form-group col-md-2 col-sm-2" style="padding:0;">
+    <%= f.label :name, class: 'sr-only' %>
+    <%= f.text_field :name, class: 'form-control', id: 'course_name', placeholder: 'Course Name' %>
+  </div>
+  <div class="form-group col-md-3 col-sm-3" style="padding:0;">
+    <%= f.label :url, class: 'sr-only' %>
+    <%= f.text_field :url, class: 'form-control', id: 'course_url', placeholder: 'Course URL' %>
+  </div>
+  <div class="form-group col-md-3 col-sm-3" style="padding:0;">
+    <%= f.label :start_date, class: 'sr-only' %>
+    <%= f.date_field :start_date, class: 'form-control', id: 'start_date', placeholder: 'Start Date' %>
+  </div>
+  <div class="form-group col-md-3 col-sm-3" style="padding:0;">
+    <%= f.label :end_date, class: 'sr-only' %>
+    <%= f.date_field :end_date, class: 'form-control', id: 'end_date', placeholder: 'End Date' %>
+  </div>
+  <%= f.submit 'Add', class: 'btn btn-success col-md-1 col-sm-1' %>
+<% end %>
