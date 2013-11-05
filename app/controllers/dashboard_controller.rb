@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
 
   def index
     @user = current_user
-    @course = Course.where(user_id: current_user.id)
+    @course = Course.where(user_id: current_user.id).nil? ? nil : Course.where(user_id: current_user.id)
     @dashboard = Course.new
   end
 

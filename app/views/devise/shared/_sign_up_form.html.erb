@@ -7,12 +7,14 @@
     </div>
   </div>
 
+  <% if f.object.password_required? %>
   <div class="form-group">
     <%= f.label :password, class: 'col-sm-2 col-sm-offset-2 control-label' %>
     <div class="col-sm-4">
       <%= f.password_field :password, class: 'form-control' %>
     </div>
   </div>
+  <% end %>
 
   <div class="form-group">
     <div class="col-sm-offset-4 col-sm-4">

@@ -27,12 +27,14 @@
     </div>
   </div>
 
+  <% if f.object.encrypted_password.present? %>
   <div class="form-group">
     <%= f.label :current_password, class: 'col-sm-2 col-sm-offset-2 control-label' %>
     <div class="col-sm-4">
       <%= f.password_field :current_password, class: 'form-control', autocomplete: 'off' %>
     </div>
   </div>
+  <% end %>
 
   <div class="form-group">
     <div class="col-sm-offset-4 col-sm-4 text-left">

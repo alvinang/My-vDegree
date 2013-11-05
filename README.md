@@ -15,16 +15,15 @@ into real life projects is crucial.
 * Ruby 2.0.0p247
 * MySQL
 
-#### To do
+#### Current features
+* authentication with facebook (omniauth-facebook) or email with devise
+* ability to add course name, url, start/end date in dashboard
 
-* Setup controller to render dashboard after login
+#### To do
+* Facebook authentication without requiring email
 * Add password confirmation for signup
-* Setup facebook authentication with omniauth
-* create dashboard with backbone.js
-* create home page UI & dashboard
 * create display page for user's virtual education
 * setup devise mailer with Mandrill
-* add beta to logo
 
 ##### Future
 
@@ -32,3 +31,5 @@ into real life projects is crucial.
 * API or use mechanize to validate courses taken
 
 #### Resources
+* [RailsCast on Devise and Omniauth](http://railscasts.com/episodes/235-devise-and-omniauth-revised?view=asciicast)
+* [More on Devise and Omniauth](http://sreeharikmarar.blogspot.com/2013/01/omniauth-devise-authentication-using.html)
