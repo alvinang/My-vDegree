@@ -1,35 +1,25 @@
-## My Virtual Degree
+## MyVDegree
 
-myvdegree.com's goal is to compile all your online education into one location allowing users to display their educational
-background in one location.
-
-#### How does this defer to typical online resumes or sites like about.me?
-
-This site focuses on what you learn from specific courses and how did you apply it.
-Theoretical understanding is important - however, the ability to apply what you learn
-into real life projects is crucial.
+MyVDegree is a test site to incorporate Devise, omniauth with Facebook, Google and Twitter as well as a psuedo dashboard that displays input
+from users.
 
 #### Build with:
 
 * Rails 4.0.0
 * Ruby 2.0.0p247
 * MySQL
+* Devise
+* Omniauth coupled with Devise (Facebook, Google and Twitter)
+
 
 #### Current features
-* authentication with facebook (omniauth-facebook) or email with devise
+* authentication with facebook (omniauth-facebook), email with devise, google or twitter
 * ability to add course name, url, start/end date in dashboard
 
-#### To do
-* Facebook authentication without requiring email
-* Add password confirmation for signup
-* create display page for user's virtual education
-* setup devise mailer with Mandrill
-
-##### Future
-
-* Display projects
-* API or use mechanize to validate courses taken
 
 #### Resources
 * [RailsCast on Devise and Omniauth](http://railscasts.com/episodes/235-devise-and-omniauth-revised?view=asciicast)
-* [More on Devise and Omniauth](http://sreeharikmarar.blogspot.com/2013/01/omniauth-devise-authentication-using.html)
+* [More on Devise and Omniauth](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
+* [Solution for multiple authentication with the same user](http://www.orhancanceylan.com/rails-twitter-and-facebook-authentications-with-omniauth-and-devise/)
+* [Managing multiple providers](https://github.com/intridea/omniauth/wiki/Managing-Multiple-Providers)
+* [Theme - customized a wordpress theme for rails](https://wrapbootstrap.com/theme/fasi-responsive-mobile-app-theme-WB061D706)

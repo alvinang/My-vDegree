@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20131105051538) do
     t.datetime "updated_at"
     t.string   "provider"
     t.string   "uid"
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

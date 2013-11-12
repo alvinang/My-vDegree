@@ -14,7 +14,10 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 gem 'font-awesome-rails', "~> 4.0.1.0"
 gem 'devise'
 gem 'protected_attributes'
+gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
 gem 'figaro'
 
 group :doc do
