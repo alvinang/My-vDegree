@@ -17,6 +17,10 @@ from users.
 * ability to add course name, url, start/end date in dashboard
 
 
+#### To do
+* Public profile page for display
+* Better UI for dashboard
+
 #### Resources
 * [RailsCast on Devise and Omniauth](http://railscasts.com/episodes/235-devise-and-omniauth-revised?view=asciicast)
 * [More on Devise and Omniauth](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)
